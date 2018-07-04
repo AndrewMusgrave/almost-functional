@@ -7,3 +7,5 @@ export {default as isObject} from './isObject.mjs';
 export {default as pipe} from './pipe.mjs';
 
 export {default as pluckDeep} from './pluckDeep.mjs';
+
+export {default as forEach} from './forEach.mjs';
