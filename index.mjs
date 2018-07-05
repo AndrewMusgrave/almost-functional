@@ -9,3 +9,5 @@ export {default as pipe} from './pipe.mjs';
 export {default as pluckDeep} from './pluckDeep.mjs';
 
 export {default as forEach} from './forEach.mjs';
+
+export {default as flatten} from './flatten.mjs';
