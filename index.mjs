@@ -15,3 +15,5 @@ export {default as flatten} from './flatten.mjs';
 export {default as deepFlatten} from './deepFlatten.mjs';
 
 export {default as removeFalsy} from './removeFalsy.mjs';
+
+export {default as toLower} from './toLower.mjs';
