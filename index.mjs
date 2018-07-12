@@ -19,3 +19,5 @@ export {default as removeFalsy} from './removeFalsy.mjs';
 export {default as toLower} from './toLower.mjs';
 
 export {default as toUpper} from './toUpper.mjs';
+
+export {default as shuffle} from './shuffle.mjs';
