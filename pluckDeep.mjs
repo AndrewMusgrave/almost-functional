@@ -1,4 +1,4 @@
-import {isObject} from '../';
+import isObject from './isObject';
 
 const pluckDeep = obj => {
   const keys = Object.keys(obj);
