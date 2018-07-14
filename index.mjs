@@ -23,3 +23,5 @@ export {default as toUpper} from './toUpper.mjs';
 export {default as shuffle} from './shuffle.mjs';
 
 export {default as random} from './random.mjs';
+
+export {default as isObjectLike} from './isObjectLike.mjs';
