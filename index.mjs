@@ -27,3 +27,5 @@ export {default as random} from './random.mjs';
 export {default as isObjectLike} from './isObjectLike.mjs';
 
 export {default as fromPairs} from './fromPairs.mjs';
+
+export {default as remove} from './remove.mjs';
