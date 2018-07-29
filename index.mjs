@@ -31,3 +31,5 @@ export {default as fromPairs} from './fromPairs.mjs';
 export {default as remove} from './remove.mjs';
 
 export {default as isPlainObject} from './isPlainObject.mjs';
+
+export {default as head} from './head.mjs';
