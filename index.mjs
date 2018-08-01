@@ -35,3 +35,5 @@ export {default as isPlainObject} from './isPlainObject.mjs';
 export {default as head} from './head.mjs';
 
 export {default as tail} from './tail.mjs';
+
+export {default as last} from './last.mjs';
