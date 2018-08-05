@@ -39,3 +39,5 @@ export {default as tail} from './tail.mjs';
 export {default as last} from './last.mjs';
 
 export {default as first} from './first.mjs';
+
+export {default as keys} from './keys.mjs';
