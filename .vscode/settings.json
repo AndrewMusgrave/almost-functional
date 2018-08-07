@@ -1,0 +1,28 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+  ],
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/node_modules": true,
+    "build/": true,
+    "docs/": true,
+    "index.*": true,
+    "types/": true
+  },
+  "javascript.validate.enable": false,
+  "prettier.eslintIntegration": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "build/": true,
+    "docs/": true,
+    "index.*": true,
+    "types/": true
+  },
+  "typescript.tsdk": "./node_modules/typescript/lib"
+}

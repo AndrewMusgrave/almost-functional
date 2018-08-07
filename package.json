@@ -1,16 +1,50 @@
 {
-  "name": "functional",
-  "version": "1.0.0",
-  "description": "",
-  "main": "compose.js",
-  "scripts": {
-    "dev": "nodemon --experimental-modules playground/playground.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "almost-functional",
+  "version": "0.1.0",
+  "description": "A small functional library",
+  "homepage": "https://github.com/AndrewMusgrave/almost-functional",
+  "repository": "https://github.com/AndrewMusgrave/almost-functional",
+  "author": {
+    "name": "Andrew Musgrave",
+    "email": "andrewdmusgrave@gmail.com",
+    "url": "https://github.com/AndrewMusgrave"
   },
-  "keywords": [],
-  "author": "Andrew Musgrave",
-  "license": "ISC",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clean": "rimraf lib/types/*.{js,d.ts} lib/*.{js,d.ts}",
+    "prebuild": "yarn run clean",
+    "build": "tsc",
+    "lint": "eslint ./src/**/*.ts --max-warnings 0 --format codeframe",
+    "format": "yarn run lint --fix",
+    "ts": "tsc --noEmit",
+    "test": "jest",
+    "check": "npm-run-all lint ts test",
+    "prepublish": "in-publish && yarn run build || :"
+  },
+  "license": "MIT",
   "devDependencies": {
-    "nodemon": "^1.17.5"
+    "@types/jest": "^23.1.5",
+    "eslint": "^5.3.0",
+    "eslint-plugin-shopify": "^23.1.0",
+    "in-publish": "^2.0.0",
+    "jest": "^23.4.0",
+    "npm-run-all": "^4.0.2",
+    "prettier": "^1.14.0",
+    "rimraf": "^2.6.1",
+    "ts-jest": "^23.0.0",
+    "typescript": "^2.5.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "(\\.|/)(test|spec)\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ]
   }
 }
