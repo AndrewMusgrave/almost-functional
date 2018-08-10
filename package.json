@@ -16,7 +16,7 @@
   "scripts": {
     "clean": "rimraf lib/types/*.{js,d.ts} lib/*.{js,d.ts}",
     "prebuild": "yarn run clean",
-    "build": "rollup -c",
+    "build": "tsc --emitDeclarationOnly && rollup -c",
     "lint": "eslint ./src/**/*.ts --max-warnings 0 --format codeframe",
     "format": "yarn run lint --fix",
     "ts": "tsc --noEmit",
