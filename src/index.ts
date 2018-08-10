@@ -43,3 +43,5 @@ export {default as first} from './first';
 export {default as keys} from './keys';
 
 export {default as curry} from './curry';
+
+export {default as merge} from './merge';
