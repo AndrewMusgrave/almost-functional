@@ -1,3 +1,11 @@
+/**
+ * @name isPlainObject
+ * @param {obj} Object
+ * @returns boolean
+ * @since 1.0.0
+ * @section
+ * @example
+ */
 const isPlainObject = (obj: {}) => {
   if (typeof obj !== 'object' || obj === null) {
     return false;

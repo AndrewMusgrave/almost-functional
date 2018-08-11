@@ -1,3 +1,11 @@
+/**
+ * @name shuffle
+ * @param {list} Array
+ * @returns Array
+ * @since 1.0.0
+ * @section
+ * @example
+ */
 const shuffle = (list: any[]) => {
   const array = list.slice();
   for (let i = array.length - 1; i > 0; i--) {

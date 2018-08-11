@@ -1,13 +1,21 @@
-const removeFalsy = (array: any[]) => {
+/**
+ * @name removeFalsy
+ * @param {arr} Array
+ * @returns Array
+ * @since 1.0.0
+ * @section
+ * @example
+ */
+const removeFalsy = (arr: any[]) => {
   const final: any[] = [];
 
-  if (array == null) {
+  if (arr == null) {
     return final;
   }
 
-  for (let i = 0; i < array.length; i++) {
-    if (array[i]) {
-      final.push(array[i]);
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]) {
+      final.push(arr[i]);
     }
   }
 
