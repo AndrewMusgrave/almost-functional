@@ -7,9 +7,12 @@
  * @section
  * @example
  */
-const forEach = (arr: any[], iteratee: Function) => {
+const forEach = (
+  arr: any[],
+  iteratee: (val: any, idx: number, arr: any[]) => void,
+) => {
   for (let i = 0; i < arr.length; i++) {
-    iteratee(arr[i]);
+    iteratee(arr[i], i, arr);
   }
 };
 

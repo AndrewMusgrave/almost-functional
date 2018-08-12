@@ -12,7 +12,7 @@ export {default as forEach} from './forEach';
 
 export {default as flatten} from './flatten';
 
-export {default as deepFlatten} from './deepFlatten';
+export {default as flattenDeep} from './flattenDeep';
 
 export {default as removeFalsy} from './removeFalsy';
 

@@ -8,7 +8,7 @@ import {PlainObject} from './types';
  * @section
  * @example
  */
-const fromPairs = (pairsArr: [[string, any]]) => {
+const fromPairs = (pairsArr: [string, any][]) => {
   const obj: PlainObject = {};
 
   for (const pair of pairsArr) {
