@@ -3,11 +3,18 @@ import {PlainObject} from './types';
 
 /**
  * @name pluckDeep
+ * @description Recursively searches an object for a specified keys and returns it or null.
  * @param {obj} Object
  * @returns {any}
  * @since 1.0.0
  * @section
  * @example
+ * const pluckObj = pluckDeep({a: {b: {c: 1, d: {e: 'found'}}}});
+ *
+ * pluckObj('f');
+ * // => null
+ * pluckObj('e');
+ * // => 'found'
  */
 const pluckDeep = (obj: PlainObject): any => {
   const keys = Object.keys(obj);

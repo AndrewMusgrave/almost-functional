@@ -2,11 +2,16 @@ import {PlainObject} from './types';
 
 /**
  * @name remove
+ * @description Removes all provided elements from the array.
  * @param {...args} Array
  * @returns Array
  * @since 1.0.0
  * @section
  * @example
+ * remove([1, 2, 3, 4], 1, 2, 3);
+ * // => [4]
+ * remove(['a', 2, 'b', 4], 1, 2, 'b');
+ * // => ['a', 4]
  */
 const remove = (...args: any[]) => {
   const array = args[0];
