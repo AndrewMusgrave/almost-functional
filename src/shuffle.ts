@@ -1,10 +1,15 @@
 /**
  * @name shuffle
+ * @description Returns a new array, shuffled.
  * @param {list} Array
  * @returns Array
  * @since 1.0.0
  * @section
  * @example
+ *  shuffle([1,2,3,4,5])
+ *  // => [2,1,5,3,4]
+ *  shuffle([1,2,3,4,5])
+ *  // => [4,5,1,2,3]
  */
 const shuffle = (list: any[]) => {
   const array = list.slice();
